@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intencion= new Intent(getApplicationContext(),MenuslideActivity2.class);
+        startActivity(intencion);
         ArrayList<Mascotas> datos = new ArrayList<>();
         datos.add(new Mascotas(R.drawable.perro1,"Toby","Macho con 4 años"));
         datos.add(new Mascotas(R.drawable.perro2,"Joselo","Macho con 22 años"));

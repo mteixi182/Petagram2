@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Petagram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="perro1">Toby</string>
+    <string name="descripcion">Perro Macho, de 4 años muy amigable</string>
+    <string name="perro2">Joselo</string>
+    <string name="descripcion2">Macho de 22 años, con lindos ojos</string>
+    <string name="perro3">charly</string>
+    <string name="descripcion3">Perro de muy caracter, que le encanta pasear</string>
+    <string name="perro4">Oreja</string>
+    <string name="descripcion4">Perro nocturno, que le gusta dormir afuera</string>
+    <string name="perro5">Carlos</string>
+    <string name="descripcion5">No cabe descripcion para tan hermoso animal, ganador en mas de una oportunidad del hueso de oro</string>
+    <string name="title_activity_menuslide2">MenuslideActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

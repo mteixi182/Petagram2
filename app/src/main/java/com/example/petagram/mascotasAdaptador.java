@@ -14,33 +14,37 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class mascotasAdaptador extends RecyclerView.Adapter<mascotasAdaptador.mascotasViewHolder>{
-    private ArrayList<Mascotas> item;
-    private Object ViewGroup;
+    private ArrayList<Mascotas> mascotas;
 
-    public mascotasAdaptador(ArrayList<Mascotas> item) {
-        this.item = item;
+    public mascotasAdaptador(ArrayList<Mascotas> mascotas) {
+
+        this.mascotas = mascotas;
     }
 
     @NonNull
     @Override
     public mascotasViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-         mascotasViewHolder mascota = new mascotasViewHolder();
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_mascotas, parent,false);
 
-        return mascota;
+
+        return new mascotasViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull mascotasViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull mascotasViewHolder mascotasViewHolder, int position) {
 
-        mascotasViewHolder.nombre.setText(item.get(i).getNombre_mas());
-        mascotasViewHolder.descripcion.setText(item.get(i).getDescripcion_mas());
-        mascotasViewHolder.imagen.setText(item.get(i).getImagen_mas());
+        Mascotas mascota = mascotas.get(position);
+
+
+        mascotasViewHolder.nombre.setText(mascota.getNombre_mas());
+        mascotasViewHolder.descripcion.setText(mascota.getDescripcion_mas());
+        mascotasViewHolder.imagen.setImageResource(mascota.getImagen_mas());
 
     }
 
     @Override
     public int getItemCount() {
-        return item.size();
+        return mascotas.size();
     }
 
     public class    mascotasViewHolder extends  RecyclerView.ViewHolder{

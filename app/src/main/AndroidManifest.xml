@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Petagram">
+        <activity
+            android:name=".MenuslideActivity2"
+            android:label="@string/title_activity_menuslide2"
+            android:theme="@style/Theme.Petagram.NoActionBar"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
