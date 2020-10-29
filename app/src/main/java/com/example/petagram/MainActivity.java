@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -37,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
         adaptador=new mascotasAdaptador(datos);
         reciclador.setAdapter(adaptador);
+
+        public void Registrar(View view);
+        AdminSqliteOpenHelper admin= new AdminSqliteOpenHelper(this, "administacion",null,1);
+        SQLiteDatabase db   =   admin.getWritableDatabase();
+
+        
 
 
     }
